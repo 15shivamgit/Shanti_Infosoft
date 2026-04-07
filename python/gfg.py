@@ -169,8 +169,8 @@ d=2
   # arr.pop(0)
 
   # arr.append(arr.pop(0))
+#print(arr)
 
-print(arr)
 '''class hello:
   def rotateArr(self,arr, d):
     #Your code here
@@ -182,7 +182,37 @@ s1=hello()
 print(s1.rotateArr(arr,d))'''
 
 
-for i in range(d):
-  arr+=[arr[0]]
-  arr=arr[1:]  
-print(arr)
+# for i in range(d):
+#   arr+=[arr[0]]
+#   arr=arr[1:]  
+# print(arr)
+
+# Parenthesis Checker
+'''
+s1="[{()}]"
+s3="([]"
+s2="[()()]{}"
+t2=sorted(s2)
+print(t2)
+temp=t2
+for x in t2[:]:
+  i=ord(x)
+  if chr(i+1) in t2:
+    t2.remove(x)
+    t2.remove(chr(i+1))
+    print(x,chr(i+1))
+print(t2)
+'''
+
+#!  Missing And Repeating
+arr = [2,2]
+result=[]
+miss=rep=None
+for i in range(1,len(arr)+1):
+  if arr.count(i)>1:
+    rep=i  
+  elif  i not in  arr:
+    miss=i 
+
+print([rep,miss])   
+print(set(arr)) 

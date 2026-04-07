@@ -173,5 +173,39 @@ lst=[1,2,3,4,5,6,7,8,9,10,'s']
 lst=[x if x%2==0 elif x=='s' "Shivam"  else 0 for x in lst]
 print(lst)'''
 
-lst=[(i,j) for i in range(2) for j in range(2)]  
+# lst=[(i,j) for i in range(2) for j in range(2)]  
+# print(lst)
+
+
+
+# array rotate
+'''arr=[1,2,3,4,5]
+d=2
+temp=arr[:d]
+arr=arr[d:]
+arr+=temp
+print(arr)'''
+
+
+'''
+n=10
+lst=list(range(1,n))
 print(lst)
+print(list(range(1,n+1)))'''
+
+
+class   Student:
+  def   __init__(self,name):
+    self.__name=name
+    self.__show()
+
+  def   __show(self):
+    print("Name",self.__name)  
+
+std=Student("Shivam")   
+std.__name='Yukti'
+print(std.__name) 
+#std.__show()
+print(repr(std))
+print(std)
+print(dir(std))
